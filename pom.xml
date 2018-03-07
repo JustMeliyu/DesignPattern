@@ -5,7 +5,7 @@
     http://maven.apache.org/maven-v4_0_0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.YTO.DesignPattern</groupId>
-    <artfactId>DesignPattern_v1</artfactId>
+    <artifactId>DesignPattern_v1</artifactId>
     <version>1.0-SNAPSHOT</version>
     <name>DesignPatternProject</name>
 </project>
