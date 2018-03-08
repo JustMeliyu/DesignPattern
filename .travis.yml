@@ -7,6 +7,6 @@ before_install:
   -in id_rsa.enc -out ~/.ssh/id_rsa -d
 - chmod 600 ~/.ssh/id_rsa
 addons:
-  ssh_known_hosts: 172.16.71.65
+  ssh_known_hosts: 118.190.87.8
 after_success:
-- ssh ly_me@172.16.71.65 "./travis_bulid.sh"
+- ssh cameltest@118.190.87.8 "./travis_bulid.sh"
