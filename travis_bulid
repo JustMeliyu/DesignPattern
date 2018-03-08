@@ -1,3 +1,0 @@
-cd /e/01liyu/code/GithubRepository/DesignPattern
-git pull origin master
-System.out.println("travis build done!")
