@@ -9,4 +9,4 @@ before_install:
 addons:
   ssh_known_hosts: 172.16.71.65
 after_success:
-- ssh JustMeliyu@172.16.71.65 "./travis_bulid"
+- ssh ly_me@172.16.71.65 "./travis_bulid.sh"
