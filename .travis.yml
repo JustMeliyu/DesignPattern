@@ -9,4 +9,5 @@ before_install:
 addons:
   ssh_known_hosts: 118.190.87.8
 after_success:
-- ssh cameltest@118.190.87.8 "travis_bulid.sh"
+- ssh cameltest@118.190.87.8 "sh travis_bulid.sh"
+
