@@ -1,19 +1,10 @@
-pipeline { 
-    agent any 
+pipeline {
+    agent { dockerfile true }
     stages {
-        stage('Build') { 
-            steps { 
-                echo 'make' 
-            }
-        }
-        stage('Test'){
+        stage('Test') {
             steps {
-                echo 'make check'
-            }
-        }
-        stage('Deploy') {
-            steps {
-                echo 'make publish'
+                sh 'node --version'
+                sh 'svn --version'
             }
         }
     }
