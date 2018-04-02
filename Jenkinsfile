@@ -3,7 +3,8 @@ pipeline {
     stages {
         stage('Test') {
             steps {
-                sh 'node --version'
+                sh 'cd /usr/bin'
+                sh 'pwd'
             }
         }
     }
