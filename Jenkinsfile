@@ -1,10 +1,11 @@
 pipeline {
-    agent { dockerfile true }
+    agent {
+        docker { image 'node:7-alpine' }
+    }
     stages {
         stage('Test') {
             steps {
-                echo 'docker is done'
-                sh 'pwd'
+                sh 'node --version'
             }
         }
     }
