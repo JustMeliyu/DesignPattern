@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Test') {
             steps {
-                sh 'cd /usr/bin'
+                echo 'docker is done'
                 sh 'pwd'
             }
         }
