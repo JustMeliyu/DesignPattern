@@ -1,12 +1,20 @@
-pipeline {
-    agent {
-        docker { image 'node:7-alpine' }
+node{
+    //定义mvn环境
+    def mvnHome = tool 'M3'
+    env.PATH = "${mvnHome}/bin:${env.PATH}"
+
+    stage('mvn test'){
+        //mvn 测试
+        sh "mvn test"
     }
-    stages {
-        stage('Test') {
-            steps {
-                sh 'node --version'
-            }
-        }
+
+    stage('mvn build'){
+        //mvn构建
+        sh "mvn clean install -Dmaven.test.skip=true"
+    }
+
+    stage('deploy'){
+        //执行部署脚本
+        echo "deploy ......" 
     }
 }
