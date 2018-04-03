@@ -3,7 +3,7 @@ node{
   stage('unit testing'){ 
     // 启动golnag:1.7并在golang内编译代码
     docker.image('golang:1.7').inside {
-      sh 'yum install maven'
+      sh 'pip install maven'
     }
   }
   
