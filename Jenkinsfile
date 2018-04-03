@@ -1,4 +1,6 @@
-node{
+pipeline{
+    agent any
+    
     //定义mvn环境
     def mvnHome = tool 'M3'
     env.PATH = "${mvnHome}/bin:${env.PATH}"
